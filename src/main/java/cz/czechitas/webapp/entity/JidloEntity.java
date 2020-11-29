@@ -1,15 +1,18 @@
 package cz.czechitas.webapp.entity;
 
+import java.time.*;
+
 public class JidloEntity {
 
     private Long id;
-    private String cas;
-    private String datum;
+    private LocalTime cas;
+    private LocalDate datum;
     private String nazev;
 
+    public JidloEntity() {
+    }
 
-
-    public JidloEntity(Long id, String cas, String datum, String nazev) {
+    public JidloEntity(Long id, LocalTime cas, LocalDate datum, String nazev) {
         this.id = id;
         this.cas = cas;
         this.datum = datum;
@@ -24,19 +27,19 @@ public class JidloEntity {
         id = newValue;
     }
 
-    public String getCas() {
+    public LocalTime getCas() {
         return cas;
     }
 
-    public void setCas(String newValue) {
+    public void setCas(LocalTime newValue) {
         cas = newValue;
     }
 
-    public String getDatum() {
+    public LocalDate getDatum() {
         return datum;
     }
 
-    public void setDatum(String newValue) {
+    public void setDatum(LocalDate newValue) {
         datum = newValue;
     }
 
