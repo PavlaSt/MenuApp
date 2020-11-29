@@ -1,16 +1,15 @@
-package cz.czechitas.webapp;
+package cz.czechitas.webapp.entity;
 
-public class Jidlo {
+public class JidloEntity {
 
-    Long id;
-    String cas;
-    String datum;
-    String nazev;
+    private Long id;
+    private String cas;
+    private String datum;
+    private String nazev;
 
-    public Jidlo() {
-    }
 
-    public Jidlo(Long id, String cas, String datum, String nazev) {
+
+    public JidloEntity(Long id, String cas, String datum, String nazev) {
         this.id = id;
         this.cas = cas;
         this.datum = datum;
