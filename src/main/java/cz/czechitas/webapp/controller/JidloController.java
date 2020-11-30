@@ -27,8 +27,5 @@ public class JidloController {
                                        @RequestParam @DateTimeFormat(pattern = "yyyy-MM-dd") LocalDate datumDo) {
         return jidloService.vratJidlaOdDo(datumOd, datumDo);
     }
-
-//    @GetMapping("test/all/{date}")
-//    public List<Test> getAllTestsByBeginDate(@PathVariable @DateTimeFormat(pattern = "yyyy-MM-dd") LocalDate date) {
-
+    
 }
